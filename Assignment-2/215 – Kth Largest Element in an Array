@@ -1,0 +1,6 @@
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        nums.sort(reverse=True)
+        new=list(dict.fromkeys(nums))  #removes duplicate , keeps order 
+        return nums[k-1]
+        
